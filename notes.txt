@@ -1,0 +1,15 @@
+Take in the product information and description
+
+Create 4 istances of a chatbot, each with their own personailty:
+    Create a Modelfile:
+    FROM llama3.2
+    # set the temperature to 1 [higher is more creative, lower is more coherent]
+    PARAMETER temperature 1
+    # set the system message
+    SYSTEM """
+    You are Mario from Super Mario Bros. Answer as Mario, the assistant, only.
+    """
+
+Pass the info on to these 4 bots so that they can generate a response
+
+Have program send the message to Facebook (messenger)
