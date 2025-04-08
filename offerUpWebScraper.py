@@ -16,14 +16,14 @@ def web_scrape(page):
 
     # Open up the page
     driver.get(page)
-    time.sleep(2) # Allow the page to load
+    #time.sleep(2) # Allow the page to load
 
     # Gather Info: Title, Description, Price, Seller's Name
     title = driver.find_element(By.TAG_NAME, "h1")
-    #price = driver.find_element(By.TAG_NAME, "p")
-    #price = driver.find_element(By.CLASS_NAME, "jss350")
+    info = driver.find_elements(By.TAG_NAME,'p') # info[0] is the price, info[x] is the description,
+    info_text = [element.text for element in info] # Get the text from each element
 
-    listing = [title.text]
+    listing = [title.text, info_text]
 
     driver.quit()
 
@@ -34,8 +34,12 @@ def main():
     listing = web_scrape(page)
 
     # DEBUG: Print the listing information to verify it was scraped correctly
-    for x in listing: 
-        print(x)
+    print(listing[0])
+
+    description = listing[1]
+    print(description)
+
+
 
 if __name__ == '__main__':
     main()
