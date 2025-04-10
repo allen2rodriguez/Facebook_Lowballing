@@ -1,0 +1,26 @@
+13
+['$50', 'Posted 2 days ago in Baltimore, MD', 'Condition: Used (normal wear)', 'Electronics & Media - Video games & Consoles', 'Chat securely on the app', 'Omar Cortez', 'Joined Feb 2024', '|', '(9)', 'Brand new willing to trade', 'Map is approximate to keep seller’s location private.', '© 2025 OfferUp Inc.', '']
+
+
+14
+['$100', 'Posted 2 days ago in Owings Mills, MD', 'Condition: New', 'Electronics & Media - Computers & Accessories', 'Chat securely on the app', 'Steven Loy', 'Joined Aug 2023', '|', '(4)', 'Brand', 'ANTMINER', 'Map is approximate to keep seller’s location private.', '© 2025 OfferUp Inc.', '']
+
+
+15
+['$25', 'Last updated 1 day ago in Baltimore, MD', 'Condition: Open Box (never used)', 'Electronics & Media - Cell phones & Accessories', 'Chat securely on the app', 'Josh', 'Joined Jan 2016', '|', '(1)', 'Brand', 'Mophie', 'Opened item never used. No defects at all. Fully working.', 'Map is approximate to keep seller’s location private.', '© 2025 OfferUp Inc.', '']
+
+
+17
+['$125', 'Ships for $4.49', 'Posted 2 days ago in Baltimore, MD', 'Condition: Used (normal wear)', 'Home & Garden - Tools & Machinery', 'Chat securely on the app', 'Dreona', 'Joined Oct 2014', 'Items shipped through OfferUp come with a 2-day purchase protection.\nLearn more', 'Type', 'Miter Saw', 'Brand', 'Ryobi', 'Ryobi P553 + Battery & Charger Used for light wood cutting jobs and in very good condition.', 'Map is approximate to keep seller’s location private.', '© 2025 OfferUp Inc.', '']
+
+
+11
+['$20', 'Posted 2 days ago in Baltimore, MD', 'Condition: Used (normal wear)', 'Toys, Games, & Hobbies - Outdoor toys & Games', 'Chat securely on the app', 'Madina Yokubova', 'Joined Aug 2021', 'Used', 'Map is approximate to keep seller’s location private.', '© 2025 OfferUp Inc.', '']
+
+
+22
+['$7,200', '163,000 Miles', '19/28 MPG', 'Posted 5 days ago in Baltimore, MD', 'Condition: Excellent', 'Vehicles - Cars & Trucks - Van & Minivan', 'Chat securely on the app', 'Greg Martins', 'Joined Apr 2025', 'Contact the seller to confirm vehicle details', 'usb', 'alloy wheels', 'privacy windows', 'sunroof', 'anti-lock brakes', 'automatic emergency braking', 'side mirror turn signals', 'auto on/off headlights', 'keyless entry', 'Map is approximate to keep seller’s location private.', '© 2025 OfferUp Inc.', '']
+
+
+18
+['$5,499', '105,508 Miles', '26/38 MPG', 'VIN', '1G1PC5SBXF7251344', 'Last updated about 13 hours ago in Phoenix, AZ', 'Condition: Good', 'Vehicles - Cars & Trucks - Sedan', 'Chat securely on the app', 'All Valley Auto Sales', 'Verified Auto Dealer', '(602) 908-0084', 'Buy VinAudit report for $1.99', 'Contact the seller to confirm vehicle details', 'Cruise Control, Tire Pressure Monitor, Traction Control', "2015 Chevrolet Cruze Lt, fwd, 1.4ltr turbo, auto ...", '© 2025 OfferUp Inc.', '']

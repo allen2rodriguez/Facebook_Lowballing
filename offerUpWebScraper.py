@@ -2,7 +2,7 @@
 # Author: Allen Rodriguez
 # Version: 1.0.0
 
-# Test Link: https://offerup.com/item/detail/a368f8c6-2e36-33f1-b3fa-d96f3430e200
+# Where I'm leaving off: Still trying to find a way to differentiate the description text from the other text on the page
 
 from selenium import webdriver # To load the page and the data on it
 from selenium.webdriver.chrome.service import Service
@@ -16,18 +16,26 @@ def web_scrape(page):
 
     # Open up the page
     driver.get(page)
-    #time.sleep(2) # Allow the page to load
 
     # Gather Info: Title, Description, Price, Seller's Name
     title = driver.find_element(By.TAG_NAME, "h1")
     info = driver.find_elements(By.TAG_NAME,'p') # info[0] is the price, info[x] is the description,
     info_text = [element.text for element in info] # Get the text from each element
+    description = driver.find_elements(By.CLASS_NAME, "MuiTypography-root.MuiTypography-body1.MuiTypography-colorTextPrimary")
+    description_text = [element.text for element in description]    
 
-    listing = [title.text, info_text]
+    listing = [title.text, info_text, description_text]
 
     driver.quit()
 
-    return listing    
+    return listing  
+
+
+
+
+
+
+'''======================================================================================================'''
 
 def main():
     page = input("Enter the Offerup listing link: ")
@@ -35,9 +43,7 @@ def main():
 
     # DEBUG: Print the listing information to verify it was scraped correctly
     print(listing[0])
-
-    description = listing[1]
-    print(description)
+    print(listing[2])
 
 
 
