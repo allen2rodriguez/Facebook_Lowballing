@@ -12,13 +12,14 @@ from offerUpWebScraper import web_scrape
 
 # Figure out how to get the specific class name for each page (e.i. jss583) Because thats the way to get the description
 
+listing = web_scrape('https://offerup.com/item/detail/a368f8c6-2e36-33f1-b3fa-d96f3430e200')
 
+print(listing)
 
 # Print out the length of the list 
 f = open('test/links2test.txt', 'r')
 for line in f:
-    listing = web_scrape(line.strip())
-    print(listing[0], )
-
+    listing1 = web_scrape(line.strip())
+    print(listing1)
 
 
