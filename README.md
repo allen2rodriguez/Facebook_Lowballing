@@ -27,3 +27,6 @@ After that run the init file to create the different bots:
 3. **Prince Charming**: Friendly, pretends to care by asking a bunch of questions but still ultimitly lowballs 
 4. **"Just doing my job"**: Calm, cold and unemotional, assesment of the product 
 5. **The Victim**: Vulnerable and gives a sop story on why they can't pay full price
+
+# Licenses
+Chromedriver - Idek if I have to put this down Im just being safe so google doesn't come after me 🙏
