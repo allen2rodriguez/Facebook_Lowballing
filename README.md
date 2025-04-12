@@ -7,6 +7,17 @@
 - [Bots] (#5 Different Bots)
 
 ## Installation
+Make sure you have ollama already installed
+If not, go to this link to download: [text](https://ollama.com/download)
+
+Clone the repository:
+```bash
+git clone https://github.com/allen2rodriguez/Facebook_Lowballing.git
+```
+After that run the init file to create the different bots:
+```bash
+./intilizeAI.sh
+```
 
 ## Usage 
 
