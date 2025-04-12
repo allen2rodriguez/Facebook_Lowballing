@@ -5,7 +5,7 @@
 from selenium import webdriver # To load the page and the data on it
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-import time
+#import time
 
 def web_scrape(page):
     # Set up the WebDriver
