@@ -40,12 +40,13 @@ def send_message(page: str, text: str, username: str, password: str):
     password_input.send_keys(password)
 
     # Click the login button
-    '''
     button3 = driver.find_elements(By.TAG_NAME, "button")
-    login_button = button3[-1] # After updating the button list, this new button should be the last
+    login_button = button3[-2] # After updating the button list, this new button should be the last
     login_button.click()
-    '''
-    
+
+    # Complete Recaptcha
+    time.sleep(30) # Allow enough time for user to do the captcha
+
     #Press the ask button 
     # Put it into the text area 
 
