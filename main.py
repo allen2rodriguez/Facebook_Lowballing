@@ -2,10 +2,10 @@
 # Author: Allen Rodriguez
 # Version: 1.0.0
 
-# TODO: Implement LLM response generation, create 5 different functions to call for each AI
+# TODO: Implement a way to send the AI responses to the author of the post
 
 from offerUpWebScraper import web_scrape
-import textGenerator
+from textGenerator import aiResponse
 
 def main():
     # Scrape the Offerup listing
@@ -17,7 +17,6 @@ def main():
     price = listing[1]
     description = listing[2]
     sellers_name = listing[3]
-
     data_pulled = f"Title: {title}\nPrice: {price}\nDescription: {description}\nSellers Name: {sellers_name}"
     print(data_pulled)
 
@@ -25,18 +24,20 @@ def main():
     correct_info = input("Is the information correct? (y/n): ")
     print("\n")
 
+    # Generate the AI responses if the information is correct
     if correct_info.lower() == 'y':
         # Pass Data onto the LLM to generate a response
-        colds_response = textGenerator.coldAI(data_pulled)
-        print (colds_response,"\n")
-
-        douches_response = textGenerator.doucheAI(data_pulled)
-        print (douches_response,"\n")
-    
+        # Words to pass into: cold, douche, shark, prince, victim 
+        colds_response = aiResponse(data_pulled, 'cold')
+        print ("coldAI's response:\n", colds_response)
+        douches_response = aiResponse(data_pulled, 'douche')
+        print ("doucheAI's response:\n", douches_response)
     else:
         print("Information is incorrect. Exiting...")
-    
     # For now only using 2 bots, but can add the rest later
+
+    # Send the AI responses to the author of the post 
+
 
 if __name__ == '__main__':
     main()

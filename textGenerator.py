@@ -1,13 +1,14 @@
 import subprocess # Use this to run ollama commands
 
-def coldAI(input):
-    run_cold = subprocess.run(['ollama', 'run', 'cold', input], capture_output=True, text=True)
-    cold_response = run_cold.stdout.strip()
-    return cold_response
-
-def doucheAI(input):
-    run_cold = subprocess.run(['ollama', 'run', 'douche', input], capture_output=True, text=True)
-    douche_response = run_cold.stdout.strip()
-    return douche_response
-
-# More bots soon to come
+def aiResponse(input, ai_name):
+    try:
+        run_cold = subprocess.run(['ollama', 'run', ai_name, input], 
+                                  capture_output=True, 
+                                  text=True,
+                                  encoding='utf-8',
+                                  errors='replace')
+        ai_response = run_cold.stdout.strip()
+        return ai_response
+    except Exception as e:
+        print(f"Error with {ai_name}: {e}")
+        return None
