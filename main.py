@@ -8,8 +8,8 @@ from offerUpWebScraper import web_scrape
 from textGenerator import aiResponse
 
 def main():
-    # Scrape the Offerup listing
-    page = input("Enter the Offerup listing link: ")
+    # Scrape the OfferUp listing
+    page = input("Enter the OfferUp listing link: ")
     listing = web_scrape(page)
 
     # Data of the page - to be passed on to LLM
@@ -20,7 +20,7 @@ def main():
     data_pulled = f"Title: {title}\nPrice: {price}\nDescription: {description}\nSellers Name: {sellers_name}"
     print(data_pulled)
 
-    # Confimation of the information pulled
+    # Confirmation of the information pulled
     correct_info = input("Is the information correct? (y/n): ")
     print("\n")
 
