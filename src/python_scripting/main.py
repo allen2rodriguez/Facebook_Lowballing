@@ -5,7 +5,7 @@
 # TODO: Implement a way to send the AI responses to the author of the post
 
 from offerUpWebScraper import web_scrape
-from src.textGenerator import aiResponse
+from src.python_scripting.textGenerator import aiResponse
 from src.offerUpBot import offerUpBot
 
 def main():

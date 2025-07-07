@@ -1,0 +1,18 @@
+{
+    "name": "Facebook Marketplace Lowballing AI",
+    "version": "1.0",
+    "description": "A Chrome extension that helps users lowball offers on Facebook Marketplace using AI.",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "action": {
+        "default_popup": "src/extension/popup.html",
+        "default_icon": "public/icon.png"
+    },
+    "background": {
+        "service_worker": "src/extension/background.js"
+    }
+}
