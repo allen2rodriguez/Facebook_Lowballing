@@ -1,0 +1,7 @@
+// Gathering posts from a wide range of categories to test different functions of the bot
+https://offerup.com/item/detail/434ddedf-4b42-39f7-ac0c-aac412b5874b?q=ford+ranger&cid=5.1
+https://offerup.com/item/detail/fa54eedb-a1ce-3d5b-99e4-889c6f60e010?cid=1.1
+https://offerup.com/item/detail/b9792022-9f69-3949-a0c7-63438148596e?q=ipad&cid=1.1
+https://offerup.com/item/detail/a039e335-7195-3b0a-a8be-0fdd8e628589?cid=1.12
+https://offerup.com/item/detail/ae058368-d6cd-3671-b218-72b4ba442c78?cid=5.1
+https://offerup.com/item/detail/c85174c8-6724-3ca3-a912-8ea718dae5d4?cid=7.3
