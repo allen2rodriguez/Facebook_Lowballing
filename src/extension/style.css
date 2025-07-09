@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .title {
@@ -25,4 +26,22 @@ body {
     color: var(--text-color);
     padding: 5px 10px;
     cursor: pointer;
+    width: 75%;
+    margin: 10px auto;
+}
+
+.footer {
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 5px;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.icons {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
 }
