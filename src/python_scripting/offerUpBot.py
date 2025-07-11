@@ -19,17 +19,16 @@ class offerUpBot:
         """
         Begins the process of scraping the OfferUp listing page for relevant information that can be passed on to the LLM.
         Parameters
-        ----------
-        page : str
-            The URL of the OfferUp listing page to scrape.
+
         Returns
         -------      
         list
             A list :
                 [0] title
                 [1] price
-                [2] description
-                [3] seller's name
+                [2] category 
+                [3] description
+                [4] seller's name
         """
         self.driver.get(self.page)
         # Gather Info: Title, Description, Price, Seller's Name
@@ -41,13 +40,13 @@ class offerUpBot:
         sellers_name = self.driver.find_element(By.XPATH, "//h2[text()='Sold by']/following::p[1]").text
         # Always quit the driver at the end of the scrape to free up resources
         self.driver.quit()
-        return [
-            title, 
-            price, 
-            category,
-            description if description else "No description given",
-            sellers_name if sellers_name else "No seller name"
-            ]
+        return {
+            'title': title, 
+            'price': price, 
+            'category': category,
+            'description': description if description else "No description given",
+            'sellers_name': sellers_name if sellers_name else "No seller name"
+        }
 
     # TBD - Finish this method after getting the extension working (AKA this is the last thing to do)
     def send_message(self, model: str, message: str, username: str, password: str) -> None:
