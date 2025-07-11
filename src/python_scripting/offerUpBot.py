@@ -1,8 +1,6 @@
 from selenium import webdriver # To load the page and the data on it
 from selenium.webdriver.common.by import By
 
-from src.python_scripting.textGenerator import aiResponse
-
 class offerUpBot:
     def __init__(self, page: str):
         """
