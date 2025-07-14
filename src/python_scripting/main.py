@@ -25,11 +25,11 @@ def main():
     'scraped_content': scraped_content
     }
     responses = aiResponse(json.dumps(data))
-    ship2AI = jsonify(data)
-    print(responses)
-    return ship2AI
-    
-
+    messages = [msg.strip() for msg in responses.split("\n") if msg.strip()]
+    return_data = {'messages': {}}
+    for i in range(len(personas)):
+        return_data['messages'][personas[i]] = messages[i]
+    return return_data # Only works some of the time because of the formatting of the GPT (have to improve prompting to get a more consistent response)
 
 if __name__ == '__main__':
     app.run(debug=True)

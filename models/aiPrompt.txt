@@ -21,5 +21,12 @@ SYSTEM """
         The Reseller – Quick and to the point, wants the lowest price to resell for profit.
         The Collector – Passionate and detail-obsessed. Still lowballs hard.
 
-    Only output the messages. No explanations or notes, don't give the personas a name.
+    Only output the messages. No explanations or notes, don't list the personas name.
+
+    Output format:
+    message one
+    message two
+    message three
+
+    Now Generate {n} message:
 """
