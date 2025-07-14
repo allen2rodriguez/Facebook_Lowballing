@@ -3,6 +3,7 @@
 # Version: 1.0.0
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import json
 
 from offerUpBot import offerUpBot
@@ -11,11 +12,12 @@ from textGenerator import aiResponse, selecting_personas
 page = "https://offerup.com/item/detail/90f989df-0eff-3eb3-9065-ed9749f25857"
 
 app = Flask(__name__)
+CORS(app)
 
 '''
 Arguments should get the number of pots need and the page that the js is currently on
 '''
-@app.route('/')
+@app.route('/main', methods=['GET'])
 def main():
     personas = selecting_personas(3)
     bot = offerUpBot(page)
